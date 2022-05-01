@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+      label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 10px;
+      }
+      input, textarea, select {
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
+      form {
+        background-color: #CC0000;
+        padding: 40px 40px 40px 40px;
+      }
+
+      #button-area {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      input[type=checkbox]:not(old) + label,
+      input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -28px;
+        padding-left : 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">Háblame de música</h1>
+    <p id="descripción">
+      Esta es una encuesta en la que puedes contarnos sobre la música que te inspira.
+    </p>
+    <form id="formulario-encuesta">
+      <label id="nombre-etiqueta">Nombre:</label>
+      <input type="text" name="name" id="name" marcador de posición requerido="First Name"><br>
+
+      <label id="email-label">Correo electrónico:</label>
+      <input type="correo electrónico" nombre="correo electrónico" id="correo electrónico" marcador de posición requerido="Mejor correo electrónico"><br>
+
+      <label id="number-label">Número:</label>
+      <tipo de entrada="número" nombre="número" id="número" min="0" max="10" marcador de posición requerido="$"><br>
+
+
+      <label id="guitar-type-label">Tipo de guitarra:</label>
+      <seleccione id="desplegable" nombre="guitarras">
+        <option value="guardabarros">Guardabarros</option>
+        <option value="martin">Martin</option>
+        <option value="epiphone">Epiphone</option>
+        <option value="otro">Otro</option>
+      </seleccionar>
+
+      <label id="additional-comments-label">Comentarios adicionales:</label>
+      <textarea placeholder="Comentarios adicionales"></textarea><br>
+
+      <div id="área-botón">
+        <label id="gender-label">Género:</label>
+        <input type="radio" class="radio-inline" name="gender" value="masculino"> Masculino<br>
+        <input type="radio" class="radio-inline" name="sexo" value="femenino"> Mujer<br>
+        <input type="radio" class="radio-inline" name="sexo" value="otro"> Otro
+      </div>
+      <div id="área-botón">
+        <label id="transportation-type-label">Tipo de transporte:</label>
+        <input type="checkbox" name="vehicle1" value="Bicicleta"> Tengo una bicicleta<br>
+        <input type="checkbox" name="vehicle2" value="Car"> Tengo un auto<br>
+        <input type="checkbox" name="vehicle3" value="Boat" marcado> Tengo un barco<br>
+      </div>
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
